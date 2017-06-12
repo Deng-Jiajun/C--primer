@@ -857,197 +857,197 @@
 
 
 
-////<60:D;60~70:C;70~80:B;80~90:A;>90:A+;
-//#include<iostream>
-//#include<vector>
-//#include<string>
-//#include<stdexcept>
-//using std::vector;
-//using std::cout;
-//using std::cin;
-//using std::endl;
-//using std::string;
-//using std::pair;
-//using std::runtime_error;
-//int main(void)
-//{
-//	//vector<string> grade_inenglish{ "D","C","B","A","A+" };
-//	//int grade;
-//	//while (cin >> grade)
-//	//	//if (grade < 60)
-//	//	//	cout << grade_inenglish[0] << endl;
-//	//	//else
-//	//	//{
-//	//	//	cout << grade_inenglish[(grade - 50) / 10];
-//	//	//	if (grade % 10 > 7)
-//	//	//		cout << '+' << endl;
-//	//	//	if (grade % 10 < 3)
-//	//	//		cout << '-' << endl;
-//	//	//}
-//	//	(grade < 60) ? (cout << grade_inenglish[0] << endl) : (cout << grade_inenglish[(grade - 50) / 10] << endl);
+//<60:D;60~70:C;70~80:B;80~90:A;>90:A+;
+#include<iostream>
+#include<vector>
+#include<string>
+#include<stdexcept>
+using std::vector;
+using std::cout;
+using std::cin;
+using std::endl;
+using std::string;
+using std::pair;
+using std::runtime_error;
+int main(void)
+{
+	//vector<string> grade_inenglish{ "D","C","B","A","A+" };
+	//int grade;
+	//while (cin >> grade)
+	//	//if (grade < 60)
+	//	//	cout << grade_inenglish[0] << endl;
+	//	//else
+	//	//{
+	//	//	cout << grade_inenglish[(grade - 50) / 10];
+	//	//	if (grade % 10 > 7)
+	//	//		cout << '+' << endl;
+	//	//	if (grade % 10 < 3)
+	//	//		cout << '-' << endl;
+	//	//}
+	//	(grade < 60) ? (cout << grade_inenglish[0] << endl) : (cout << grade_inenglish[(grade - 50) / 10] << endl);
+
+	//string SaveWord, InputWord, BeforeWord;
+	//int SaveNum=0, CountNum=0;
+
+	//cin >> BeforeWord;
+	//++CountNum;
+	//while (cin >> InputWord)
+	//{
+	//	if (InputWord == BeforeWord)
+	//		++CountNum;
+	//	else
+	//	{
+	//		if (CountNum > SaveNum)
+	//		{
+	//			SaveWord = BeforeWord;
+	//			SaveNum = CountNum;
+	//		}
+	//		CountNum = 1;
+	//	}
+
+	//	BeforeWord = InputWord;
+	//}
+	//cout << SaveWord << " " << SaveNum << endl;
+
+
+	//pair<string, int>max_duplicated;
+	//int count = 0;
+	//for (string str, prestr; cin >> str; prestr = str)
+	//{
+	//	if (str == prestr)
+	//		++count;
+	//	else
+	//		count = 1;
+
+	//	if (count > max_duplicated.second)
+	//		max_duplicated = { prestr,count };
+	//}
+	//if (max_duplicated.first.empty())
+	//	cout << "There's no duplicated string." << endl;
+	//else
+	//	cout << "the word " << max_duplicated.first
+	//	<< " occurred " << max_duplicated.second << " times." << endl;
+
+//	vector<string> svec;
+//	string str;
+//	while (cin >> str)
+//		svec.push_back(str);
 //
-//	//string SaveWord, InputWord, BeforeWord;
-//	//int SaveNum=0, CountNum=0;
+//	auto it = svec.begin();
+//	int bigNum = 0, countNum = 0;
+//	string bigStr, countStr;
+//	while (svec.size() > 0 && it != svec.end()-1)
+//	{
+//		if(*it==*(it+1))
+//		{
+//			++countNum;
+//			countStr = *it;
+//		}
+//		else
+//		{
+//			countNum = 0;
+//		}
+//		if (countNum > bigNum)
+//		{
+//			bigStr = countStr;
+//			bigNum = countNum;
+//		}
+//		++it;
+//	}
 //
-//	//cin >> BeforeWord;
-//	//++CountNum;
-//	//while (cin >> InputWord)
-//	//{
-//	//	if (InputWord == BeforeWord)
-//	//		++CountNum;
-//	//	else
-//	//	{
-//	//		if (CountNum > SaveNum)
-//	//		{
-//	//			SaveWord = BeforeWord;
-//	//			SaveNum = CountNum;
-//	//		}
-//	//		CountNum = 1;
-//	//	}
-//
-//	//	BeforeWord = InputWord;
-//	//}
-//	//cout << SaveWord << " " << SaveNum << endl;
-//
-//
-//	//pair<string, int>max_duplicated;
-//	//int count = 0;
-//	//for (string str, prestr; cin >> str; prestr = str)
-//	//{
-//	//	if (str == prestr)
-//	//		++count;
-//	//	else
-//	//		count = 1;
-//
-//	//	if (count > max_duplicated.second)
-//	//		max_duplicated = { prestr,count };
-//	//}
-//	//if (max_duplicated.first.empty())
-//	//	cout << "There's no duplicated string." << endl;
-//	//else
-//	//	cout << "the word " << max_duplicated.first
-//	//	<< " occurred " << max_duplicated.second << " times." << endl;
-//
-////	vector<string> svec;
-////	string str;
-////	while (cin >> str)
-////		svec.push_back(str);
-////
-////	auto it = svec.begin();
-////	int bigNum = 0, countNum = 0;
-////	string bigStr, countStr;
-////	while (svec.size() > 0 && it != svec.end()-1)
-////	{
-////		if(*it==*(it+1))
-////		{
-////			++countNum;
-////			countStr = *it;
-////		}
-////		else
-////		{
-////			countNum = 0;
-////		}
-////		if (countNum > bigNum)
-////		{
-////			bigStr = countStr;
-////			bigNum = countNum;
-////		}
-////		++it;
-////	}
-////
-////	if(bigNum==0)
-////		cout << "There's no duplicated string." << endl;
-////	else
-////		cout << "the word " << bigStr
-////			<< " occurred " << bigNum+1 << " times." << endl;
-//
-//
-//
-//	//vector<int> ivec1{ 0,1,1,2,3,5,8 };
-//	//vector<int> ivec2{ 0,1,1,2};
-//	//auto size =(ivec1.size() < ivec2.size() )? ivec1.size() : ivec2.size();
-//
-//	//	for (decltype(ivec1.size()) i = 0; i != size; i++)
-//	//	{
-//	//		if (ivec1[i] != ivec2[i])
-//	//		{
-//	//			cout << "NO" << endl;
-//	//			break;
-//	//		}
-//	//		if(i==size-1)
-//	//			cout << "YES" << endl;
-//	//	}
-//	//	
-//
-//
-//
-//	//string word1, word2;
-//	//bool flag = false;
-//	//while (cin >> word1)
-//	//{		
-//	//	if (word1 == word2 && isupper(word1[0]))
-//	//	{
-//	//		flag = true; 
-//	//		cout << word1 << endl;
-//	//		break;
-//	//	}
-//	//	word2 = word1;
-//	//}
-//	//if (!flag)
-//	//	cout << "None" << endl;
-//
-//
-//	//string buf;
-//	//while (cin >> buf && !buf.empty())
-//	//{
-//	//	if (buf[0] != '_')
-//	//		continue;
-//	//	cout << buf << endl;
-//	//}
-//
-//
-//	/*int a, b;
-//	cin >> a >> b;
-//	if (a == b)
-//	throw runtime_error("错了~");
-//	;*/
-//
-//	//string s1, s2;
-//	//while (cin >> s1 >> s2)
-//	//{
-//	//	try
-//	//	{
-//	//		if (s1 == s2)
-//	//			throw runtime_error("错了~");
-//	//		else
-//	//			cout << s1 << s2 << endl;
-//	//	}
-//	//	catch (runtime_error err)
-//	//	{
-//	//		cout <<err.what()
-//	//			<< "重来咯？" << endl;
-//	//		string c;
-//	//		cin >> c;
-//	//		if (c == "我不！")
-//	//			break;
-//	//	}
-//	//}
-//
-//	//int i1, i2;
-//	//cin >> i1 >> i2;
-//	//try {
-//	//	if (i2 == 0)
-//	//		throw runtime_error("i2==0!");
-//	//	else
-//	//		cout << i1 / i2 << endl;
-//	//}
-//	//catch (runtime_error err)
-//	//{
-//	//	cout << err.what();
-//	//}
-//
-//	return 0;
-//}
+//	if(bigNum==0)
+//		cout << "There's no duplicated string." << endl;
+//	else
+//		cout << "the word " << bigStr
+//			<< " occurred " << bigNum+1 << " times." << endl;
+
+
+
+	//vector<int> ivec1{ 0,1,1,2,3,5,8 };
+	//vector<int> ivec2{ 0,1,1,2};
+	//auto size =(ivec1.size() < ivec2.size() )? ivec1.size() : ivec2.size();
+
+	//	for (decltype(ivec1.size()) i = 0; i != size; i++)
+	//	{
+	//		if (ivec1[i] != ivec2[i])
+	//		{
+	//			cout << "NO" << endl;
+	//			break;
+	//		}
+	//		if(i==size-1)
+	//			cout << "YES" << endl;
+	//	}
+	//	
+
+
+
+	//string word1, word2;
+	//bool flag = false;
+	//while (cin >> word1)
+	//{		
+	//	if (word1 == word2 && isupper(word1[0]))
+	//	{
+	//		flag = true; 
+	//		cout << word1 << endl;
+	//		break;
+	//	}
+	//	word2 = word1;
+	//}
+	//if (!flag)
+	//	cout << "None" << endl;
+
+
+	//string buf;
+	//while (cin >> buf && !buf.empty())
+	//{
+	//	if (buf[0] != '_')
+	//		continue;
+	//	cout << buf << endl;
+	//}
+
+
+	/*int a, b;
+	cin >> a >> b;
+	if (a == b)
+	throw runtime_error("错了~");
+	;*/
+
+	string s1, s2;
+	while (cin >> s1 >> s2)
+	{
+		try
+		{
+			if (s1 == s2)
+				throw runtime_error("错了~");
+			else
+				cout << s1 << s2 << endl;
+		}
+		catch (runtime_error err)
+		{
+			cout <<err.what()
+				<< "重来咯？" << endl;
+			string c;
+			cin >> c;
+			if (c == "我不！")
+				break;
+		}
+	}
+
+	//int i1, i2;
+	//cin >> i1 >> i2;
+	//try {
+	//	if (i2 == 0)
+	//		throw runtime_error("i2==0!");
+	//	else
+	//		cout << i1 / i2 << endl;
+	//}
+	//catch (runtime_error err)
+	//{
+	//	cout << err.what();
+	//}
+
+	return 0;
+}
 
 
 //#include<iostream>
